@@ -67,6 +67,27 @@ function generateSpinnerHtml(ele, spinnerType) {
       spinnerHTML += '<div class="force-circle11 force-child"></div>';
       spinnerHTML += '<div class="force-circle12 force-child"></div></div>';
       break;
+      case "fastspinner":
+      spinnerHTML = '<div class="spinner-loader"></div>';
+      break;
+      case "dotsloader":
+      spinnerHTML = '<div class="dots-loader"></div>';
+      break;
+      case "throbberloader":
+      spinnerHTML = '<div class="throbber-loader"></div>';
+      break;
+      case "whirlyloader":
+      spinnerHTML = '<div class="whirly-loader"></div>';
+      break;
+      case "google":
+      spinnerHTML = '<span class="google-force-container">  <div class="firstdot"></div><div class="secondtdot"></div><div class="thirddot"></div><div class="forthdot"></div></span>';
+      break;
+      case "material":
+      spinnerHTML = '<div class="load-bar"><div class="bar"></div>  <div class="bar"></div><div class="bar"></div></div>';
+      break;
+      case "youtube":
+      spinnerHTML = '<div class="loading-line"></div><div class="km"></div>';
+      break;
   }
   $(ele).append(spinnerHTML);
 }
@@ -84,18 +105,19 @@ function forceSpin(elementId, spinnerType, spinnerColor, spinnerbgColor) {
       //$('.force-react ').css("background-color", height);
       break;
     case "circle":
-      $('.force-child:before').css("background-color", spinnerColor);
+      $('.force-child:before').css("background-color", spinnerColor); break;
     case "windows":
-      $('.force-rotating-plane').css("background-color", spinnerColor);
+      $('.force-rotating-plane').css("background-color", spinnerColor);break;
     case "bubbles":
-      $('.force-child:before').css("background-color", spinnerColor);
+      $('.force-child:before').css("background-color", spinnerColor);break;
     case "pulse":
-      $('.force-spinner-pulse ').css("background-color", spinnerColor);
+      $('.force-spinner-pulse ').css("background-color", spinnerColor);break;
     case "dots":
-      $('.force-child').css("background-color", spinnerColor);
+      $('.force-child').css("background-color", spinnerColor);break;
     case "cubes":
-      $('.force-cube').css("background-color", spinnerColor);
+      $('.force-cube').css("background-color", spinnerColor);break;
     case "bounce":
-      $('.force-child').css("background-color", spinnerColor);
+      $('.force-child').css("background-color", spinnerColor);break;
+  
   }
 }
