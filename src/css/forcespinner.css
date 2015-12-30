@@ -1,11 +1,268 @@
+.showbox {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 5%;
+}
 
-.load-bar {   
+.material-loader {
+  position: relative;
+  margin: 0px auto;
+  width: 100px;
+}
+
+.material-loader:before {
+  content: '';
+  display: block;
+  padding-top: 100%;
+}
+
+.circular {
+  height: 120px;
+  -webkit-animation: rotate 2s linear infinite;
+  animation: rotate 2s linear infinite;
+  height: 100%;
+  -webkit-transform-origin: center center;
+  transform-origin: center center;
+  width: 100%;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 100px;
+}
+
+.path {
+  stroke-dasharray: 1, 200;
+  stroke-dashoffset: 0;
+  -webkit-animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
+  animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
+  stroke-linecap: round;
+}
+
+@-webkit-keyframes rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes dash {
+  0% {
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -35px;
+  }
+  100% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -124px;
+  }
+}
+
+@keyframes dash {
+  0% {
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -35px;
+  }
+  100% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -124px;
+  }
+}
+
+@-webkit-keyframes color {
+  100%,
+  0% {
+    stroke: #d62d20;
+  }
+  40% {
+    stroke: #0057e7;
+  }
+  66% {
+    stroke: #008744;
+  }
+  80%,
+  90% {
+    stroke: #ffa700;
+  }
+}
+
+@keyframes color {
+  100%,
+  0% {
+    stroke: #d62d20;
+  }
+  40% {
+    stroke: #0057e7;
+  }
+  66% {
+    stroke: #008744;
+  }
+  80%,
+  90% {
+    stroke: #ffa700;
+  }
+}
+
+.loading-line {
+  height: 0.3em;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  -moz-animation: loading 5s linear;
+  -webkit-animation: loading 5s linear;
+  animation: loading 5s linear;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+@-moz-keyframes loading {
+  0% {
+    background: #f07719;
+    width: 0%;
+  }
+  30% {
+    background: #f07719;
+    width: 15%;
+  }
+  55% {
+    background: #f07719;
+    width: 38%;
+  }
+  59% {
+    background: #f07719;
+    width: 45%;
+  }
+  66% {
+    background: #f07719;
+    width: 52%;
+  }
+  75% {
+    background: #f07719;
+    width: 57%;
+  }
+  88% {
+    background: #f07719;
+    width: 60%;
+  }
+  100% {
+    background: #f07719;
+  }
+}
+
+@-webkit-keyframes loading {
+  0% {
+    background: #f07719;
+    width: 0%;
+  }
+  30% {
+    background: #f07719;
+    width: 15%;
+  }
+  55% {
+    background: #f07719;
+    width: 38%;
+  }
+  59% {
+    background: #f07719;
+    width: 45%;
+  }
+  66% {
+    background: #f07719;
+    width: 52%;
+  }
+  75% {
+    background: #f07719;
+    width: 57%;
+  }
+  88% {
+    background: #f07719;
+    width: 60%;
+  }
+  100% {
+    background: #f07719;
+  }
+}
+
+@keyframes loading {
+  0% {
+    background: #f07719;
+    width: 0%;
+  }
+  30% {
+    background: #f07719;
+    width: 15%;
+  }
+  55% {
+    background: #f07719;
+    width: 38%;
+  }
+  59% {
+    background: #f07719;
+    width: 45%;
+  }
+  66% {
+    background: #f07719;
+    width: 52%;
+  }
+  75% {
+    background: #f07719;
+    width: 57%;
+  }
+  88% {
+    background: #f07719;
+    width: 60%;
+  }
+  100% {
+    background: #f07719;
+  }
+}
+
+
+/* By Kaushalya Mandaliya*/
+
+.km {
+  bottom: 0.3em;
+  color: #f07719;
+  font: bold 1em 'Calibri', helvetica;
+  position: fixed;
+  right: 0.3em;
+}
+
+.km a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.load-bar {
   position: relative;
   margin-top: 20px;
   width: 100%;
   height: 6px;
   background-color: #fdba2c;
 }
+
 .bar {
   content: "";
   display: inline;
@@ -15,22 +272,37 @@
   left: 50%;
   text-align: center;
 }
+
 .bar:nth-child(1) {
   background-color: #da4733;
   animation: loading 3s linear infinite;
 }
+
 .bar:nth-child(2) {
   background-color: #3b78e7;
   animation: loading 3s linear 1s infinite;
 }
+
 .bar:nth-child(3) {
   background-color: #fdba2c;
   animation: loading 3s linear 2s infinite;
 }
+
 @keyframes loading {
-    from {left: 50%; width: 0;z-index:100;}
-    33.3333% {left: 0; width: 100%;z-index: 10;}
-    to {left: 0; width: 100%;}
+  from {
+    left: 50%;
+    width: 0;
+    z-index: 100;
+  }
+  33.3333% {
+    left: 0;
+    width: 100%;
+    z-index: 10;
+  }
+  to {
+    left: 0;
+    width: 100%;
+  }
 }
 
 h1 span:first-child {
