@@ -9911,7 +9911,9 @@ pre[class*="language-"] {
   }
   
   .headerLogo{
-  height : 220px;
-  width : 320px;;
+  height : 230px;
+  width : 230px;
+  margin : auto;
+  text-align : center;
 }
   </style>
