@@ -7,5 +7,5 @@ Killer Loaders inspired by Material Design for Salesforce UX
 
 [<img src="https://www.evernote.com/shard/s176/sh/6aec3bf9-d6de-4c62-9f3e-3eeea5ff9ac8/0b61b9f523f4c44f/res/626e7138-f5b7-4771-a2a5-9e06ade8d969/skitch.png?resizeSmall&width=832" align="center" width="100%">](http://mailtoharshit.github.io/ForceSpinner/)
 
-[<img src="http://g.recordit.co/K4Kk5iCtFu.gif" align="center" width="100%">](http://mailtoharshit.github.io/ForceSpinner/)
+[<img src="http://g.recordit.co/K4Kk5iCtFu.gif" align="center" height="100%" width="120%">](http://mailtoharshit.github.io/ForceSpinner/)
 
