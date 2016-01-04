@@ -9916,4 +9916,8 @@ pre[class*="language-"] {
   margin : auto;
   text-align : center;
 }
+.load-bar{
+        margin-top: 10%;
+}
+
   </style>
