@@ -1,103 +1,320 @@
-
-<html lang="en-us">
-  <head>
-    <meta charset="UTF-8">
-    <title>Forcespinner by mailtoharshit</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/forcesnipper.css" media="screen">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <head>
-  <!-- Material Design Lite -->
-  <script src="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.min.js"></script>
-  <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.indigo-pink.min.css" />
-  <!-- Material Design icon font -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+<head>
+  <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.indigo-pink.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,600' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://rawgit.com/mailtoharshit/ForceSpinner/master/src/css/forcespinner.css" type="text/css">
+  <script src="javascript/prism.js"></script>
+  <script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://rawgit.com/mailtoharshit/ForceSpinner/master/src/js/forcespinner.js"></script>
+  <link rel="stylesheet" href="stylesheets/stylesheet.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
   <script>
-    //code to generate random background color 
-      function rg(m, n) {
-        return Math.floor( Math.random() * (n - m + 1) ) + m;
-    }
-    
-    function hex(i) {
-        return i.toString(16);
-    }
-    
-    function randColor() {
-        return '#' + hex(rg(1, 15)) + hex(rg(1, 15)) + hex(rg(1, 15)) +
-            hex(rg(1, 15)) + hex(rg(1, 15)) + hex(rg(1, 15));
-    }
-    
-      function loadallspinners(){
-       forceSpin(div1,'google');
-       forceSpin(div2,'dotsloader','white', 'transparent');
-       forceSpin(div3,'material');
-       forceSpin(div4,'whirlyloader');
-       
-       //change color here
-       forceSpin(div5, 'facebook', 'black', 'transparent');
-        forceSpin(div6, 'windows', 'white', 'transparent');
-      forceSpin(div7, 'bounce', 'black', 'transparent');
-    forceSpin(div8, 'cubes', 'white', 'transparent');
-     forceSpin(div9, 'dots', 'black', 'transparent');
-    forceSpin(div10, 'bubbles', 'white', 'transparent');
-    forceSpin(div11,'throbberloader');
-    forceSpin(div12, '', 'black', 'transparent');
-        
-       //$('.mdl-cell').css("background",randColor()); 
-      
-      }
+    function loadallspinners(){
+          forceSpin(div1, 'google');
+          forceSpin(div2, 'material');
+          forceSpin(div3, 'google-material');
+          //forceSpin(div4,'dotsloader'); 
+          forceSpin(div5, 'facebook', 'white', 'transparent');
+          forceSpin(div6, 'bounce', 'white', 'transparent');
+          forceSpin(div7, 'cubes', 'white', 'transparent');
+          forceSpin(div8, 'dots', 'white', 'transparent');
+          forceSpin(div9, 'bubbles', 'white', 'transparent');
+          forceSpin(div10, 'windows', 'red', 'transparent');
+        }
   </script>
-  <style>
-    body {
-      background: white;
-    }
-    
-    .text {
-      padding-bottom: 40px;
-      font-family "serif";
-      font-size: 14px;
-      color: black;
-    }
-    
-    .mdl-grid {
-      padding: 0!important;
-    }
-    
-    .mdl-cell {
-      background: #136873;
-      padding: 50px 0;
-      text-align: center;
-      color: #fff;
-      font-weight: bold;
-    }
-    
-    .demo-grid-1 .mdl-cell {
-      background: #FF4081;
-    }
-  </style>
-   </head>
-<body onload="loadallspinners();">
-  <div class="demo-grid-ruler mdl-grid">
-    <div id="div1" class="mdl-cell mdl-cell--3-col">
-      <div class="text">forceSpin(div,google);</div>
+  <script>
+function download(file)
+{
+ window.location=file;
+}
+</script>
+</head>
+
+<body bgcolor="#aaaaaa" onload="loadallspinners()">
+  <nav class="slds-col slds-size--1-of-1">
+    <div class="headerLogo">
+      <img src="http://oi64.tinypic.com/tajv3m.jpg">
     </div>
-    <div id="div2" class="mdl-cell mdl-cell--3-col">
-      <div class="text">forceSpin(div,dotsloader);</div>
+    <div id="wrapperHeader" style="text-align: center;">
+      <h1 style="width:100%">
+                <div class="headerText">Simple HTML5 Spinner for Salesforce.com Projects 
+                </div>
+                <br>
+                <!-- <img src="http://www.queness.com/resources/images/15788.jpg"> -->
+            </h1>
     </div>
-    <div id="div3" class="mdl-cell mdl-cell--3-col">
-      <div class="text">forceSpin(div,throbberloader);</div>
+  </nav>
+  <br/>
+  <hr/>
+  <div class="section group">
+    <div class="col span_1_of_3">
+      <div class="cardLogo">
+        <i class="fa fa-cogs fa-4x"></i>
+      </div>
+      <div class="cardTitle">
+        Easy Plugin with Salesforce
+      </div>
+      <div class="cardMeta">
+        Import Spinner in simplified fashion
+      </div>
     </div>
-    <div id="div4" class="mdl-cell mdl-cell--3-col">
-      <div class="text">forceSpin(div,whirlyloader);</div>
+    <div class="col span_1_of_3">
+      <div class="cardLogo">
+        <i class="fa fa-tablet fa-4x"></i>
+      </div>
+      <div class="cardTitle">
+        Support Devices
+      </div>
+      <div class="cardMeta">
+        Compatible with Mobile/Desktop Devices
+      </div>
     </div>
-    <div id="div5" class="mdl-cell mdl-cell--3-col"><div class="text">forceSpin(div,facebook);</div></div>
-    <div id="div6" class="mdl-cell mdl-cell--3-col"><div class="text">forceSpin(div,windows);</div></div>
-    <div id="div7" class="mdl-cell mdl-cell--3-col"></div>
-    <div id="div8" class="mdl-cell mdl-cell--3-col"></div>
-    <div id="div9" class="mdl-cell mdl-cell--3-col"></div>
-    <div id="div10" class="mdl-cell mdl-cell--3-col"></div>
-    <div id="div11" class="mdl-cell mdl-cell--3-col"></div>
-    <div id="div12" class="mdl-cell mdl-cell--3-col"></div>
+    <div class="col span_1_of_3">
+      <div class="cardLogo">
+        <i class="fa fa-cloud fa-4x"></i>
+      </div>
+      <div class="cardTitle">
+        Better UI for Force.com
+      </div>
+      <div class="cardMeta">
+        Make user experience beautiful
+      </div>
+    </div>
   </div>
+  <hr/>
+  <div class="slds-grid">
+    <div id="div1" class="slds-size--1-of-2" style="background-color:black">
+    </div>
+    <div class="slds-size--1-of-2" style="text-align:center; margin:auto; background-color:#f5f2f0;">
+      <pre>
+          <code class="language-css" margin-bottom:10px;>
+             forceSpin(Your div id, 'google'); 
+          </code>
+      </pre>
+    </div>
+  </div>
+  <hr/>
+  <div class="slds-grid">
+    <div id="div2" class="slds-size--1-of-2" style="background-color:black">
+    </div>
+    <div class="slds-size--1-of-2" style="text-align:center; margin:auto; background-color:#f5f2f0;">
+      <pre>
+          <code class="language-css" margin-bottom:10px;>
+             forceSpin(Your div id, 'material'); 
+          </code>
+      </pre>
+    </div>
+  </div>
+  <hr/>
+  <div class="slds-grid">
+    <div id="div3" class="slds-size--1-of-2" style="background-color:black">
+    </div>
+    <div class="slds-size--1-of-2" style="text-align:center; margin:auto; background-color:#f5f2f0;">
+      <pre>
+          <code class="language-css" margin-bottom:10px;>
+             forceSpin(Your div id, 'google-material'); 
+          </code>
+      </pre>
+    </div>
+  </div>
+  <hr/>
+  <div class="slds-grid">
+    <!--  <div id="div4" class="slds-size--1-of-2" style="background-color:black">
+    </div>
+    <div class="slds-size--1-of-2" style="text-align:center; margin:auto; background-color:#f5f2f0;">
+      <pre>
+          <code class="language-css" margin-bottom:10px;>
+             forceSpin(Your div id, 'dotsloader'); 
+          </code>
+      </pre>
+    </div> -->
+  </div>
+  <hr/>
+  <div class="slds-grid">
+    <div id="div5" class="slds-size--1-of-2" style="background-color:black">
+    </div>
+    <div class="slds-size--1-of-2" style="text-align:center; margin:auto; background-color:#f5f2f0;">
+      <pre>
+          <code class="language-css" margin-bottom:10px;>
+             forceSpin(Your div id, 'facebook', 'white', 'transparent');
+          </code>
+      </pre>
+    </div>
+  </div>
+  <hr/>
+  <div class="slds-grid">
+    <div id="div6" class="slds-size--1-of-2" style="background-color:black">
+    </div>
+    <div class="slds-size--1-of-2" style="text-align:center; margin:auto; background-color:#f5f2f0;">
+      <pre>
+          <code class="language-css" margin-bottom:10px;>
+             forceSpin(Your div id, 'bounce', 'white', 'transparent');
+          </code>
+      </pre>
+    </div>
+  </div>
+  <hr/>
+  <div class="slds-grid">
+    <div id="div7" class="slds-size--1-of-2" style="background-color:black">
+    </div>
+    <div class="slds-size--1-of-2" style="text-align:center; margin:auto; background-color:#f5f2f0;">
+      <pre>
+          <code class="language-css" margin-bottom:10px;>
+            forceSpin(Your div id, 'cubes', 'white', 'transparent');
+          </code>
+      </pre>
+    </div>
+  </div>
+  <hr/>
+  <div class="slds-grid">
+    <div id="div8" class="slds-size--1-of-2" style="background-color:black">
+    </div>
+    <div class="slds-size--1-of-2" style="text-align:center; margin:auto; background-color:#f5f2f0;">
+      <pre>
+          <code class="language-css" margin-bottom:10px;>
+            forceSpin(Your div id, 'dots', 'white', 'transparent');
+          </code>
+      </pre>
+    </div>
+  </div>
+  <hr/>
+  <div class="slds-grid">
+    <div id="div9" class="slds-size--1-of-2" style="background-color:black">
+    </div>
+    <div class="slds-size--1-of-2" style="text-align:center; margin:auto; background-color:#f5f2f0;">
+      <pre>
+          <code class="language-css" margin-bottom:10px;>
+            forceSpin(Your div id, 'bubbles', 'white', 'transparent');
+          </code>
+      </pre>
+    </div>
+  </div>
+  <hr/>
+  <div class="slds-grid">
+    <div id="div10" class="slds-size--1-of-2" style="background-color:black">
+    </div>
+    <div class="slds-size--1-of-2" style="text-align:center; margin:auto; background-color:#f5f2f0;">
+      <pre>
+          <code class="language-css" margin-bottom:10px;>
+            forceSpin(Your div id, '', 'white', 'transparent');
+          </code>
+      </pre>
+    </div>
+  </div>
+  <hr/>
+
+  <div class="section group">
+    <div class="col span_1_of_1" style="text-align: center; line-height: 1.5;
+    font-family: 'Roboto', 'sans-serif'; font-weight: normal;">
+      <div class="downloadSection">
+        <div class="downloadTitle"> Getting Started</div>
+        <div class="downloadContent">
+          <h4>Learn how to easily start using ForceSpinner in your Force.com Pages.</h4>
+        </div>
+      </div>
+
+      <h2 style="text-align:center">CDN</h2>
+      <pre style="text-align:center">
+          <code class="language-markup" style="font-weight:10px; font-size:16px; font-family:Roboto; text-align:left">
+               &lt;!-- Compiled and minified CSS --&gt; &#xd;
+               &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.rawgit.com/mailtoharshit/ForceSpinner/master/src/css/forcespinner.css&quot;&gt; &#xd; &lt;!-- Compiled and minified JavaScript --&gt; &#xd; &lt;script src=&quot;https://cdn.rawgit.com/mailtoharshit/ForceSpinner/master/src/js/forcespinner.js&quot;&gt;&lt;/script&gt;
+          </code>
+      </pre>
+      <h2 style="text-align:center">Download</h2>
+      <br/>
+      <div class="slds-grid">
+        <div id="downloadjs" class="slds-size--1-of-2">
+          
+          
+          
+          <h4>Download Javascript</h4>
+         
+            <h4><a href="https://github.com/mailtoharshit/ForceSpinner/blob/master/src/js/forcespinner.js" download><button type = "submit" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored"><i class="material-icons">play_for_work</i></button>  
+</a></h4>
+        </div> 
+        <div id="downloadcss" class="slds-size--1-of-2">
+          <h4>Download CSS</h4>
+          <h4><a href="https://github.com/mailtoharshit/ForceSpinner/blob/master/src/css/forcespinner.css" download><button type = "submit" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored"><i class="material-icons">play_for_work</i></button>  
+</a></h4>
+          
+                
+              
+              <!---->
+            
+        </div>
+      </div>
+      <hr/>
+      <div class="slds-grid">
+        <div id="downloadjs" class="slds-size--1-of-2">
+          
+          <h2>HTML Setup</h2></div>
+        <div id="downloadjs" class="slds-size--1-of-2">
+          <p id="htmlText" style="text-align:left">Next you just have to make sure you link the files properly in your webpage. Generally it is wise to import javascript files at the end of the body to reduce page load time. Follow the example below on how to import ForceSnipper into your webpage.
+            One last thing to note is that you have to import jQuery before importing ForceSnipper.js!</p>
+        </div>
+      </div>
+      <hr/>
+      <div class="slds-grid">
+        <script src="https://gist.github.com/mailtoharshit/f5e5742890f76adf9396.js"></script>
+      </div>
+    </div>
+
+  </div>
+  <footer class="mdl-mini-footer">
+    <div class="mdl-mini-footer__right-section">
+      <div class="mdl-mega-footer__drop-down-section">
+      <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+      <h1 class="mdl-mega-footer__heading">Credits</h1>
+      <ul class="mdl-mega-footer__link-list">
+        <li><a href="#">RaviChandra Maddali</a></li>
+        <li><a href="#">ChandraMouli Vegi</a></li>
+        <li><a href="#">Chaith Pathuri</a></li>
+        <li><a href="#">Jayesh Anjara</a></li>
+      </ul>
+    </div>
+      </div>
+    <div class="mdl-mini-footer__left-section">
+      <div class="slds-grid">
+        <div class="mdl-logo slds-size--1-of-1">
+          <a href="http://www.oyecode.com"><img src="http://1.bp.blogspot.com/-qbsLac2CpPA/VRQ4cU-5WrI/AAAAAAAAIbA/QG6W3kp17F8/s1600/Screen%2BShot%2B2015-03-26%2Bat%2B9.47.38%2BAM.png" height="242" width="242"></a>
+        </div>
+        <div class="mdl-logo slds-size--1-of-1">
+          <iframe style="text-align:right" src="https://ghbtns.com/github-btn.html?user=mailtoharshit&repo=ForceSpinner&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
+          <br/>
+          <a target="_blank" href="https://gitter.im/mailtoharshit/ForceSnipper">
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"> Join Chat
+            </button>
+          </a>
+          <br/>
+          <a id="follow-button" class="btn" title="Follow Oyecode on Twitter" href="https://twitter.com/intent/follow?original_referer=https%3A%2F%2Fdev.twitter.com%2Fweb%2Ffollow-button&amp;ref_src=twsrc%5Etfw&amp;region=follow_link&amp;screen_name=Oyecode&amp;tw_p=followbutton"><i></i><span class="label" id="l">Follow <b>@Oyecode</b></span></a>
+        </div>
+        
+      </div>
+    
+       
+  </footer>
 </body>
-</html>
+<style type="text/css">
+  .downloadSection{
+        background-color: #4DB6AC;
+            padding-top: 8rem;
+    padding-bottom: 1rem;
+  }
+  .downloadTitle{
+    color: #FFCDD2 !important;
+    font-weight: 300;
+    font-size: 2.28rem;
+    line-height: 110%;
+    margin: -5.86rem 0 0.912rem 0;
+    margin-bottom: 40px;
+  }
+  .htmlText{
+    padding-top: 20px;
+  }
+
+  h2{
+    font-size: 24px;
+  }
+</style>
