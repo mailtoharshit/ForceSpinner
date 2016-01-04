@@ -9916,4 +9916,21 @@ pre[class*="language-"] {
   margin : auto;
   text-align : center;
 }
+
+.downloadSection{
+        background-color: #ee6e73;
+            padding-top: 8rem;
+    padding-bottom: 1rem;
+  }
+  .downloadTitle{
+    color: #FFCDD2 !important;
+    font-weight: 300;
+    font-size: 2.28rem;
+    line-height: 110%;
+    margin: 1.14rem 0 0.912rem 0;
+    margin-bottom: 40px;
+  }
+  .htmlText{
+    padding-top: 20px;
+  }
   </style>
