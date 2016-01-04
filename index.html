@@ -1,203 +1,216 @@
 <head>
-    <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.indigo-pink.min.css">
-    <link href='https://fonts.googleapis.com/css?family=Raleway:400,600' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://rawgit.com/mailtoharshit/ForceSpinner/master/src/css/forcespinner.css" type="text/css">
-    <script src="javascript/prism.js"></script>
-    <script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="https://rawgit.com/mailtoharshit/ForceSpinner/master/src/js/forcespinner.js"></script>
-    <link rel="stylesheet" href="stylesheets/stylesheet.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-    <script>
-        function loadallspinners() {
-            forceSpin(div1, 'google');
-            forceSpin(div2, 'material');
-            forceSpin(div3, 'google-material');
-            forceSpin(div4, 'dotsloader');
-            forceSpin(div5, 'facebook', 'black', 'transparent');
-            forceSpin(div6, 'bounce', 'black', 'transparent');
-            forceSpin(div7, 'cubes', 'black', 'transparent');
-            forceSpin(div8, 'dots', 'black', 'transparent');
-            forceSpin(div9, 'bubbles', 'black', 'transparent');
+  <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.indigo-pink.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,600' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://rawgit.com/mailtoharshit/ForceSpinner/master/src/css/forcespinner.css" type="text/css">
+  <script src="javascript/prism.js"></script>
+  <script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://rawgit.com/mailtoharshit/ForceSpinner/master/src/js/forcespinner.js"></script>
+  <link rel="stylesheet" href="stylesheets/stylesheet.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  <script>
+    function loadallspinners(){
+          forceSpin(div1, 'google');
+          forceSpin(div2, 'material');
+          forceSpin(div3, 'google-material');
+          //forceSpin(div4,'dotsloader'); 
+          forceSpin(div5, 'facebook', 'white', 'transparent');
+          forceSpin(div6, 'bounce', 'white', 'transparent');
+          forceSpin(div7, 'cubes', 'white', 'transparent');
+          forceSpin(div8, 'dots', 'white', 'transparent');
+          forceSpin(div9, 'bubbles', 'white', 'transparent');
+          forceSpin(div10, '', 'white', 'transparent');
         }
-    </script>
-    <style type="text/css">
-    .slds-size--6-of-12{
-        padding-top: 30px;
-    }
-    </style>
+  </script>
 </head>
+
 <body bgcolor="#aaaaaa" onload="loadallspinners()">
-    <nav class="slds-col slds-size--1-of-1">
-        <div class="headerLogo">
-            <img src="http://oi64.tinypic.com/tajv3m.jpg">
-        </div>
-        <div id="wrapperHeader" style="text-align: center;">
-            <h1 style="width:100%">
+  <nav class="slds-col slds-size--1-of-1">
+    <div class="headerLogo">
+      <img src="http://oi64.tinypic.com/tajv3m.jpg">
+    </div>
+    <div id="wrapperHeader" style="text-align: center;">
+      <h1 style="width:100%">
                 <div class="headerText">Simple HTML5 Spinner for Salesforce.com Projects 
                 </div>
                 <br>
                 <img src="http://www.queness.com/resources/images/15788.jpg">
             </h1>
-        </div>
-    </nav>
-    <br/>
-    <hr/>
-    <div class="section group">
-        <div class="col span_1_of_3">
-            <div class="cardLogo">
-                <i class="fa fa-cogs fa-4x"></i>
-            </div>
-            <div class="cardTitle">
-                Easy Plugin with Salesforce
-            </div>
-            <div class="cardMeta">
-                Import Spinner in simplified fashion
-            </div>
-        </div>
-        <div class="col span_1_of_3">
-            <div class="cardLogo">
-                <i class="fa fa-tablet fa-4x"></i>
-            </div>
-            <div class="cardTitle">
-                Support Devices
-            </div>
-            <div class="cardMeta">
-                Compatible with Mobile/Desktop Devices
-            </div>
-        </div>
-        <div class="col span_1_of_3">
-            <div class="cardLogo">
-                <i class="fa fa-cloud fa-4x"></i>
-            </div>
-            <div class="cardTitle">
-                Better UI for Force.com
-            </div>
-            <div class="cardMeta">
-                Make user experience beautiful
-            </div>
-        </div>
     </div>
-    <hr/>
-    <div class="slds-grid slds-grid--align-center">
-        <div id="div1" class="slds-size--6-of-12" style="height:100px;background-color:#FFFFFF">
-        </div>
-        <div class="slds-size--6-of-12" style="height:100px;text-align:center">
-            <pre>
-                <code class="language-css">
-                    forceSpin(Your div id, 'google'); 
-                </code>
-            </pre>
-        </div>
+  </nav>
+  <br/>
+  <hr/>
+  <div class="section group">
+    <div class="col span_1_of_3">
+      <div class="cardLogo">
+        <i class="fa fa-cogs fa-4x"></i>
+      </div>
+      <div class="cardTitle">
+        Easy Plugin with Salesforce
+      </div>
+      <div class="cardMeta">
+        Import Spinner in simplified fashion
+      </div>
     </div>
-    <hr/>
-   
-        <div id="div2" class="slds-size--6-of-12" style="height:100px;background-color:#FFFFFF">
-        </div>
-        <div class="slds-size--6-of-12" style="height:100px;text-align:center">
-            <pre>
-                <code class="language-css">
-                    forceSpin(Your div id, 'material'); 
-                </code>
-            </pre>
-        </div>
-    <hr/>
-    <div class="slds-grid slds-grid--align-center slds-size--1-of-2">
-        <div id="div3" class="slds-size--1-of-2" style="height:100px;background-color:#FFFFFF">
-        </div>
-        <div class="slds-size--1-of-22" style="height:100px;text-align:center">
-            <pre>
-                <code class="language-css">
-                    forceSpin(Your div id, 'google-material'); 
-                </code>
-            </pre>
-        </div>
+    <div class="col span_1_of_3">
+      <div class="cardLogo">
+        <i class="fa fa-tablet fa-4x"></i>
+      </div>
+      <div class="cardTitle">
+        Support Devices
+      </div>
+      <div class="cardMeta">
+        Compatible with Mobile/Desktop Devices
+      </div>
     </div>
-    <hr/>
-        <div id="div4" class="slds-size--1-of-2" style="height:100px;background-color:#FFFFFF">
-        </div>
-        <div class="slds-size--1-of-2" style="height:100px;text-align:center">
-            <pre>
-                <code class="language-css">
-                    forceSpin(div4, 'dotsloader');
-                </code>
-            </pre>
-        </div>
-    <hr/>
-        <div id="div5" class="slds-size--1-of-2" style="height:100px;background-color:#FFFFFF">
-        </div>
-        <div class="slds-size--1-of-2" style="height:100px;text-align:center">
-            <pre>
-                <code class="language-css">
-                    forceSpin(div5, 'facebook', 'black', 'transparent');
-                </code>
-            </pre>
-       
-    
-    <hr/>
-    
-        <div id="div6" class="slds-size--1-of-2" style="height:100px;background-color:#FFFFFF">
-        </div>
-        <div class="slds-size--1-of-2" style="height:100px;text-align:center">
-            <pre>
-                <code class="language-css">
-                    forceSpin(div6, 'bounce', 'black', 'transparent');
-                </code>
-            </pre>
-        </div>
-    
-    <hr/>
-        <div id="div7" class="slds-size--1-of-2" style="height:100px;background-color:#FFFFFF">
-        </div>
-        <div class="slds-size--1-of-2" style="height:100px;text-align:center">
-            <pre>
-                <code class="language-css">
-                    forceSpin(div7, 'cubes', 'black', 'transparent');
-                </code>
-            </pre>
-        </div>
-    
-    <hr/>
-    
-        <div id="div8" class="slds-size--1-of-2" style="height:100px;background-color:#FFFFFF">
-        </div>
-        <div class="slds-size--1-of-2" style="height:100px;text-align:center">
-            <pre>
-                <code class="language-css">
-                    forceSpin(div8, 'dots', 'black', 'transparent');
-                </code>
-            </pre>
-        </div>
-    
-    <hr/>
-   
-        <div id="div9" class="slds-size--1-of-2" style="height:100px;background-color:#FFFFFF">
-        </div>
-        <div class="slds-size--1-of-2" style="height:100px;text-align:center">
-            <pre>
-                <code class="language-css">
-                    forceSpin(div9, 'bubbles', 'black', 'transparent');
-                </code>
-            </pre>
-        </div>
+    <div class="col span_1_of_3">
+      <div class="cardLogo">
+        <i class="fa fa-cloud fa-4x"></i>
+      </div>
+      <div class="cardTitle">
+        Better UI for Force.com
+      </div>
+      <div class="cardMeta">
+        Make user experience beautiful
+      </div>
     </div>
-    <hr/>
-    <div class="section group">
-        <div class="col span_1_of_1">
-            Getting Started
-        </div>
+  </div>
+  <hr/>
+  <div class="slds-grid">
+    <div id="div1" class="slds-size--1-of-2" style="background-color:black">
     </div>
-    <footer class="mdl-mini-footer">
-        <div class="mdl-mini-footer__left-section">
-            <div class="mdl-logo">Title</div>
-            <ul class="mdl-mini-footer__link-list">
-                <li><a href="#">Help</a>
-                </li>
-                <li><a href="#">Privacy & Terms</a>
-                </li>
-            </ul>
-        </div>
-    </footer>
+    <div class="slds-size--1-of-2" style="text-align:center; margin:auto; background-color:#f5f2f0;">
+      <pre>
+          <code class="language-css" margin-bottom:10px;>
+             forceSpin(Your div id, 'google'); 
+          </code>
+      </pre>
+    </div>
+  </div>
+  <hr/>
+  <div class="slds-grid">
+    <div id="div2" class="slds-size--1-of-2" style="background-color:black">
+    </div>
+    <div class="slds-size--1-of-2" style="text-align:center; margin:auto; background-color:#f5f2f0;">
+      <pre>
+          <code class="language-css" margin-bottom:10px;>
+             forceSpin(Your div id, 'material'); 
+          </code>
+      </pre>
+    </div>
+  </div>
+  <hr/>
+  <div class="slds-grid">
+    <div id="div3" class="slds-size--1-of-2" style="background-color:black">
+    </div>
+    <div class="slds-size--1-of-2" style="text-align:center; margin:auto; background-color:#f5f2f0;">
+      <pre>
+          <code class="language-css" margin-bottom:10px;>
+             forceSpin(Your div id, 'google-material'); 
+          </code>
+      </pre>
+    </div>
+  </div>
+  <hr/>
+  <div class="slds-grid">
+    <!--  <div id="div4" class="slds-size--1-of-2" style="background-color:black">
+    </div>
+    <div class="slds-size--1-of-2" style="text-align:center; margin:auto; background-color:#f5f2f0;">
+      <pre>
+          <code class="language-css" margin-bottom:10px;>
+             forceSpin(Your div id, 'dotsloader'); 
+          </code>
+      </pre>
+    </div> -->
+  </div>
+  <hr/>
+  <div class="slds-grid">
+    <div id="div5" class="slds-size--1-of-2" style="background-color:black">
+    </div>
+    <div class="slds-size--1-of-2" style="text-align:center; margin:auto; background-color:#f5f2f0;">
+      <pre>
+          <code class="language-css" margin-bottom:10px;>
+             forceSpin(div5, 'facebook', 'white', 'transparent');
+          </code>
+      </pre>
+    </div>
+  </div>
+  <hr/>
+  <div class="slds-grid">
+    <div id="div6" class="slds-size--1-of-2" style="background-color:black">
+    </div>
+    <div class="slds-size--1-of-2" style="text-align:center; margin:auto; background-color:#f5f2f0;">
+      <pre>
+          <code class="language-css" margin-bottom:10px;>
+             forceSpin(div6, 'bounce', 'white', 'transparent');
+          </code>
+      </pre>
+    </div>
+  </div>
+  <hr/>
+  <div class="slds-grid">
+    <div id="div7" class="slds-size--1-of-2" style="background-color:black">
+    </div>
+    <div class="slds-size--1-of-2" style="text-align:center; margin:auto; background-color:#f5f2f0;">
+      <pre>
+          <code class="language-css" margin-bottom:10px;>
+            forceSpin(div7, 'cubes', 'white', 'transparent');
+          </code>
+      </pre>
+    </div>
+  </div>
+  <hr/>
+  <div class="slds-grid">
+    <div id="div8" class="slds-size--1-of-2" style="background-color:black">
+    </div>
+    <div class="slds-size--1-of-2" style="text-align:center; margin:auto; background-color:#f5f2f0;">
+      <pre>
+          <code class="language-css" margin-bottom:10px;>
+            forceSpin(div8, 'dots', 'white', 'transparent');
+          </code>
+      </pre>
+    </div>
+  </div>
+  <hr/>
+  <div class="slds-grid">
+    <div id="div9" class="slds-size--1-of-2" style="background-color:black">
+    </div>
+    <div class="slds-size--1-of-2" style="text-align:center; margin:auto; background-color:#f5f2f0;">
+      <pre>
+          <code class="language-css" margin-bottom:10px;>
+            forceSpin(div9, 'bubbles', 'white', 'transparent');
+          </code>
+      </pre>
+    </div>
+  </div>
+  <hr/>
+  <div class="slds-grid">
+    <div id="div10" class="slds-size--1-of-2" style="background-color:black">
+    </div>
+    <div class="slds-size--1-of-2" style="text-align:center; margin:auto; background-color:#f5f2f0;">
+      <pre>
+          <code class="language-css" margin-bottom:10px;>
+            forceSpin(div10, '', 'white', 'transparent');
+          </code>
+      </pre>
+    </div>
+  </div>
+  <hr/>
+
+  <div class="section group">
+    <div class="col span_1_of_1">
+      Getting Started
+    </div>
+  </div>
+  <footer class="mdl-mini-footer">
+    <div class="mdl-mini-footer__left-section">
+      <div class="mdl-logo">Title</div>
+      <ul class="mdl-mini-footer__link-list">
+        <li><a href="#">Help</a></li>
+        <li><a href="#">Privacy & Terms</a></li>
+      </ul>
+    </div>
+  </footer>
 </body>
