@@ -5,4 +5,4 @@ Killer Loaders inspired by Material Design for Salesforce UX
 
 [Go to HomePage](http://mailtoharshit.github.io/ForceSpinner/)
 
-[<img src="http://g.recordit.co/pHYXs7Dil5.gif" align="center" width="300">](https://login.salesforce.com/)
+[<img src="http://g.recordit.co/pHYXs7Dil5.gif" align="center" width="700">](https://login.salesforce.com/)
