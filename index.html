@@ -10,7 +10,6 @@
   <link rel="stylesheet" href="stylesheets/stylesheet.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-  <link rel='shortcut icon' type='image/x-icon' href='http://www.iconarchive.com/download/i99349/dtafalonso/android-lollipop/Contacts.ico' />
   <script>
     function loadallspinners(){
           forceSpin(div1, 'google');
@@ -18,19 +17,25 @@
           forceSpin(div3, 'google-material');
           //forceSpin(div4,'dotsloader'); 
           forceSpin(div5, 'facebook', 'white', 'transparent');
-          forceSpin(div6, 'bounce', 'white', 'transparent');
+          forceSpin(div6, 'bounce', 'white', 'transparent'); 
           forceSpin(div7, 'cubes', 'white', 'transparent');
           forceSpin(div8, 'dots', 'white', 'transparent');
           forceSpin(div9, 'bubbles', 'white', 'transparent');
           forceSpin(div10, 'windows', 'red', 'transparent');
         }
   </script>
+  <script>
+function download(file)
+{
+ window.location=file;
+}
+</script>
 </head>
 
 <body bgcolor="#aaaaaa" onload="loadallspinners()">
   <nav class="slds-col slds-size--1-of-1">
     <div class="headerLogo">
-      <a href="https://github.com/mailtoharshit/ForceSpinner/"><img src="http://oi64.tinypic.com/tajv3m.jpg"></a>
+      <img src="http://oi64.tinypic.com/tajv3m.jpg">
     </div>
     <div id="wrapperHeader" style="text-align: center;">
       <h1 style="width:100%">
@@ -181,7 +186,7 @@
     <div class="slds-size--1-of-2" style="text-align:center; margin:auto; background-color:#f5f2f0;">
       <pre>
           <code class="language-css" margin-bottom:10px;>
-            forceSpin(Your div id, 'bubbles', 'green', 'transparent');
+            forceSpin(Your div id, 'bubbles', 'white', 'transparent');
           </code>
       </pre>
     </div>
@@ -193,7 +198,7 @@
     <div class="slds-size--1-of-2" style="text-align:center; margin:auto; background-color:#f5f2f0;">
       <pre>
           <code class="language-css" margin-bottom:10px;>
-            forceSpin(Your div id, 'windows', 'red', 'transparent');
+            forceSpin(Your div id, '', 'white', 'transparent');
           </code>
       </pre>
     </div>
@@ -221,22 +226,29 @@
       <br/>
       <div class="slds-grid">
         <div id="downloadjs" class="slds-size--1-of-2">
-          <h4>Download Javascript</h4>
-          <a href="https://github.com/mailtoharshit/ForceSpinner/blob/master/src/js/forcespinner.js">
-            <button style="text-align:left" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" />
           
-            <i class="material-icons">play_for_work</i></a>
-        </div>
+          
+          
+          <h4>Download Javascript</h4>
+         
+            <h4><a href="https://github.com/mailtoharshit/ForceSpinner/blob/master/src/js/forcespinner.js" download><button type = "submit" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored"><i class="material-icons">play_for_work</i></button>  
+</a></h4>
+        </div> 
         <div id="downloadcss" class="slds-size--1-of-2">
-          <h4>Download CSS </h4>
-          <a href="https://github.com/mailtoharshit/ForceSpinner/blob/master/src/css/forcespinner.css">
-            <button style="text-align:left" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" />
-          <i class="material-icons">play_for_work</i></a>
+          <h4>Download CSS</h4>
+          <h4><a href="https://github.com/mailtoharshit/ForceSpinner/blob/master/src/css/forcespinner.css" download><button type = "submit" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored"><i class="material-icons">play_for_work</i></button>  
+</a></h4>
+          
+                
+              
+              <!---->
+            
         </div>
       </div>
       <hr/>
       <div class="slds-grid">
         <div id="downloadjs" class="slds-size--1-of-2">
+          
           <h2>HTML Setup</h2></div>
         <div id="downloadjs" class="slds-size--1-of-2">
           <p id="htmlText" style="text-align:left">Next you just have to make sure you link the files properly in your webpage. Generally it is wise to import javascript files at the end of the body to reduce page load time. Follow the example below on how to import ForceSnipper into your webpage.
@@ -251,6 +263,18 @@
 
   </div>
   <footer class="mdl-mini-footer">
+    <div class="mdl-mini-footer__right-section">
+      <div class="mdl-mega-footer__drop-down-section">
+      <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+      <h1 class="mdl-mega-footer__heading">Credits</h1>
+      <ul class="mdl-mega-footer__link-list">
+        <li><a href="#">RaviChandra Maddali</a></li>
+        <li><a href="#">ChandraMouli Vegi</a></li>
+        <li><a href="#">Chaith Pathuri</a></li>
+        <li><a href="#">Jayesh Anjara</a></li>
+      </ul>
+    </div>
+      </div>
     <div class="mdl-mini-footer__left-section">
       <div class="slds-grid">
         <div class="mdl-logo slds-size--1-of-1">
@@ -266,7 +290,10 @@
           <br/>
           <a id="follow-button" class="btn" title="Follow Oyecode on Twitter" href="https://twitter.com/intent/follow?original_referer=https%3A%2F%2Fdev.twitter.com%2Fweb%2Ffollow-button&amp;ref_src=twsrc%5Etfw&amp;region=follow_link&amp;screen_name=Oyecode&amp;tw_p=followbutton"><i></i><span class="label" id="l">Follow <b>@Oyecode</b></span></a>
         </div>
+        
       </div>
+    
+       
   </footer>
 </body>
 <style type="text/css">
