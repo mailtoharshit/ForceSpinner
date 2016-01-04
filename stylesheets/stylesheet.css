@@ -9916,8 +9916,29 @@ pre[class*="language-"] {
   margin : auto;
   text-align : center;
 }
+<<<<<<< HEAD
 .load-bar{
         margin-top: 10%;
 }
 
   </style>
+=======
+
+.downloadSection{
+        background-color: #ee6e73;
+            padding-top: 8rem;
+    padding-bottom: 1rem;
+  }
+  .downloadTitle{
+    color: #FFCDD2 !important;
+    font-weight: 300;
+    font-size: 2.28rem;
+    line-height: 110%;
+    margin: 1.14rem 0 0.912rem 0;
+    margin-bottom: 40px;
+  }
+  .htmlText{
+    padding-top: 20px;
+  }
+  </style>
+>>>>>>> d6f094ac6a61123f430c499b077366371de5b2e5
