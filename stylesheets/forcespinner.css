@@ -1,4 +1,107 @@
+/*Salesforce Lighting Design System Spinner*/
 
+.sdls_spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(90deg);
+  width: 2em;
+}
+
+.sdls_spinner, .sdls_spinner div {
+  transform-origin: 50% 50%;
+}
+
+.sdls_spinner div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.sdls_spinner:before,
+.sdls_spinner:after,
+.sdls_spinner div:before,
+.sdls_spinner div:after {
+  animation-duration: 1000ms;
+  animation-iteration-count: infinite;
+  content: "";
+  background: #009DDC;
+  border-radius: 100%;
+  width: 0.5em;
+  height: 0.5em;
+  position: absolute;
+}
+
+.sdls_spinner:before,
+.sdls_spinner div:before {
+  animation-name: orbBounceBefore;
+  top: -0.25em;
+  left: -0.25em;
+}
+
+.sdls_spinner:after,
+.sdls_spinner div:after {
+  animation-name: orbBounceAfter;
+  top: -0.25em;
+  right: -0.25em;
+}
+
+.sdls_spinner-a {
+  transform: rotate(60deg) translateY(0);
+}
+
+.sdls_spinner-b {
+  transform: rotate(120deg) translateY(0);
+}
+
+@keyframes orbBounceBefore {
+  60% {
+    transform: translateX(0);
+    animation-timing-function: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+  }
+  80% {
+    animation-timing-function: cubic-bezier(0, 1.11, 0.7, 1.43);
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes orbBounceAfter {
+  60% {
+    animation-timing-function: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+    transform: translateX(0);
+  }
+  80% {
+    animation-timing-function: cubic-bezier(0, 1.11, 0.7, 1.43);
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.sdls_spinner-a:before {
+  animation-delay: 166.66667ms;
+}
+
+.sdls_spinner-b:before {
+  animation-delay: 333.33333ms;
+}
+
+.sdls_spinner:after {
+  animation-delay: 500ms;
+}
+
+.sdls_spinner-a:after {
+  animation-delay: 666.66667ms;
+}
+
+.sdls_spinner-b:after {
+  animation-delay: 833.33333ms;
+}
+
+/*End of Lighting Design System Spinner*/
 .load-bar {   
   position: relative;
   margin-top: 20px;
