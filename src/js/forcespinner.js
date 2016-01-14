@@ -96,8 +96,8 @@ function generateSpinnerHtml(ele, spinnerType) {
       break;
     case "slds-spinner":
       spinnerHTML = '<br/><div class="sdls_spinner"><br/>';
-      spinnerHTML += '<br/><div class="sdls_spinner-a"></div>';
-      spinnerHTML += '<br/><div class="sdls_spinner-b"></div>';
+      spinnerHTML += '<div class="sdls_spinner-a"></div>';
+      spinnerHTML += '<div class="sdls_spinner-b"></div>';
       spinnerHTML += '</div>';
       break; 
   }
