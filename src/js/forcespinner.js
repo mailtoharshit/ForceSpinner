@@ -143,7 +143,7 @@ function forceSpin(elementId, spinnerType, spinnerColor, spinnerbgColor) {
       var x = $('.slds_spinner div:after');
       console.log('test2');
       console.log('x:'+x);
-      $('.slds_spinner div:after').css('background-color', 'green');
+      $('.slds_spinner div:after').css("background-color", 'green');
       $('.slds_spinner div:before').css("background", spinnerColor);
       $('.slds_spinner:before').css("background", spinnerColor);
       $('.slds_spinner:after').css("background", spinnerColor);
