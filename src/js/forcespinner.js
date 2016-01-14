@@ -95,9 +95,9 @@ function generateSpinnerHtml(ele, spinnerType) {
       spinnerHTML = '<div class="loader"> <svg class="circular" viewBox="25 25 50 50"><circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"/></svg></div>';
       break;
     case "slds":
-      spinnerHTML = '<div class="sdls_spinner">';
-      spinnerHTML += '<div class="sdls_spinner-a"></div>';
-      spinnerHTML += '<div class="sdls_spinner-b"></div>';
+      spinnerHTML = '<div class="slds_spinner">';
+      spinnerHTML += '<div class="slds_spinner-a"></div>';
+      spinnerHTML += '<div class="slds_spinner-b"></div>';
       spinnerHTML += '</div>';
       break; 
   }
