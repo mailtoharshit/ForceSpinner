@@ -26,7 +26,7 @@
   animation-duration: 1000ms;
   animation-iteration-count: infinite;
   content: "";
-  background: red;
+  background: #009DDC;
   border-radius: 100%;
   width: 0.5em;
   height: 0.5em;
