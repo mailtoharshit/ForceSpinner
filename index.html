@@ -3,11 +3,11 @@
   <link href='https://fonts.googleapis.com/css?family=Raleway:400,600' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://rawgit.com/mailtoharshit/ForceSpinner/master/src/css/forcespinner.css" type="text/css">
-  <script src="javascript/prism.js"></script>
+  <script src="https://rawgit.com/mailtoharshit/ForceSpinner/gh-pages/javascript/prism.js"></script>
   <script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="https://rawgit.com/mailtoharshit/ForceSpinner/master/src/js/forcespinner.js"></script>
-  <link rel="stylesheet" href="stylesheets/stylesheet.css">
+  <link rel="stylesheet" href="https://rawgit.com/mailtoharshit/ForceSpinner/gh-pages/stylesheets/stylesheet.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
   <script>
@@ -22,6 +22,9 @@
           forceSpin(div8, 'dots', 'white', 'transparent');
           forceSpin(div9, 'bubbles', 'white', 'transparent');
           forceSpin(div10, 'windows', 'red', 'transparent');
+          forceSpin(div11, 'slds-spinner');
+
+
         }
   </script>
   <script>
@@ -84,6 +87,7 @@ function download(file)
     </div>
   </div>
   <hr/>
+  
   <div class="slds-grid">
     <div id="div1" class="slds-size--1-of-2" style="background-color:black">
     </div>
@@ -168,7 +172,8 @@ function download(file)
     </div>
   </div>
   <hr/>
-  <div class="slds-grid">
+
+   <div class="slds-grid">
     <div id="div8" class="slds-size--1-of-2" style="background-color:black">
     </div>
     <div class="slds-size--1-of-2" style="text-align:center; margin:auto; background-color:#f5f2f0;">
@@ -180,6 +185,13 @@ function download(file)
     </div>
   </div>
   <hr/>
+
+
+
+
+
+
+
   <div class="slds-grid">
     <div id="div9" class="slds-size--1-of-2" style="background-color:black">
     </div>
@@ -202,8 +214,28 @@ function download(file)
           </code>
       </pre>
     </div>
+
+
+    
+
+
   </div>
   <hr/>
+  
+  
+  <div class="slds-grid">
+    <div id="div11" class="slds-size--1-of-2" style="background-color:black"><br/><br/>
+     </div>
+    <div class="slds-size--1-of-2" style="text-align:center; margin:auto; background-color:#f5f2f0;">
+      <pre>
+          <code class="language-css" margin-bottom:10px;>
+             forceSpin(Your div id, 'slds-spinner');
+          </code>
+      </pre>
+    </div>
+  </div>
+  <hr/>
+  
 
   <div class="section group">
     <div class="col span_1_of_1" style="text-align: center; line-height: 1.5;
@@ -317,4 +349,110 @@ function download(file)
   h2{
     font-size: 24px;
   }
+
+
+  /* Editable */
+/* Probably shouldn't edit, but go crazy. */
+/* Sassery */
+.sdls_spinner {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(90deg);
+  width: 2em;
+}
+
+.sdls_spinner, .sdls_spinner div {
+  transform-origin: 50% 50%;
+}
+
+.sdls_spinner div {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.sdls_spinner:before,
+.sdls_spinner:after,
+.sdls_spinner div:before,
+.sdls_spinner div:after {
+  animation-duration: 1000ms;
+  animation-iteration-count: infinite;
+  content: "";
+  background: #009DDC;
+  border-radius: 100%;
+  width: 0.5em;
+  height: 0.5em;
+  position: absolute;
+}
+
+.sdls_spinner:before,
+.sdls_spinner div:before {
+  animation-name: orbBounceBefore;
+  top: -0.25em;
+  left: -0.25em;
+}
+
+.sdls_spinner:after,
+.sdls_spinner div:after {
+  animation-name: orbBounceAfter;
+  top: -0.25em;
+  right: -0.25em;
+}
+
+.sdls_spinner-a {
+  transform: rotate(60deg) translateY(0);
+}
+
+.sdls_spinner-b {
+  transform: rotate(120deg) translateY(0);
+}
+
+@keyframes orbBounceBefore {
+  60% {
+    transform: translateX(0);
+    animation-timing-function: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+  }
+  80% {
+    animation-timing-function: cubic-bezier(0, 1.11, 0.7, 1.43);
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes orbBounceAfter {
+  60% {
+    animation-timing-function: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+    transform: translateX(0);
+  }
+  80% {
+    animation-timing-function: cubic-bezier(0, 1.11, 0.7, 1.43);
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.sdls_spinner-a:before {
+  animation-delay: 166.66667ms;
+}
+
+.sdls_spinner-b:before {
+  animation-delay: 333.33333ms;
+}
+
+.sdls_spinner:after {
+  animation-delay: 500ms;
+}
+
+.sdls_spinner-a:after {
+  animation-delay: 666.66667ms;
+}
+
+.sdls_spinner-b:after {
+  animation-delay: 833.33333ms;
+}
+
 </style>
