@@ -1,3 +1,4 @@
+
 .slds_spinner {
   position: relative;
   top: 50%;
@@ -16,6 +17,7 @@
   left: 0;
   width: 100%;
 }
+
 
 .slds_spinner:before,
 .slds_spinner:after,
