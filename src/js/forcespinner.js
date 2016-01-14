@@ -136,6 +136,8 @@ function forceSpin(elementId, spinnerType, spinnerColor, spinnerbgColor) {
       break;
     case "bounce":
       $('.force-child').css("background-color", spinnerColor);
+    case "slds":
+      $('.slds_spinner div:after').css("background", spinnerColor);
       
       break;
 
