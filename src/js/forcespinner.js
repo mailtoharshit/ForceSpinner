@@ -139,8 +139,9 @@ function forceSpin(elementId, spinnerType, spinnerColor, spinnerbgColor) {
       $('.force-child').css("background-color", spinnerColor);
       break;
      case "slds":
-      console.log('pig');
+      console.log('test');
       var x = $('.slds_spinner div:after');
+      console.log('test2');
       console.log('x:'+x);
       $('.slds_spinner div:after').css("background", spinnerColor);
       $('.slds_spinner div:before').css("background", spinnerColor);
