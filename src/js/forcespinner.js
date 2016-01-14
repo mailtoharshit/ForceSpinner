@@ -105,6 +105,7 @@ function generateSpinnerHtml(ele, spinnerType) {
 }
 
 function forceSpin(elementId, spinnerType, spinnerColor, spinnerbgColor) {
+  console.log('hello');
   generateSpinnerHtml(elementId, spinnerType);
   switch (spinnerType) {
     case "facebook":
@@ -138,6 +139,7 @@ function forceSpin(elementId, spinnerType, spinnerColor, spinnerbgColor) {
       $('.force-child').css("background-color", spinnerColor);
       break;
      case "slds":
+      console.log('pig');
       $('.slds_spinner div:after').css("background", spinnerColor);
       $('.slds_spinner div:before').css("background", spinnerColor);
       $('.slds_spinner:before').css("background", spinnerColor);
