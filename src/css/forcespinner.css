@@ -1,3 +1,106 @@
+
+.slds_spinner {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(90deg);
+  width: 2em;
+}
+
+.slds_spinner, .slds_spinner div {
+  transform-origin: 50% 50%;
+}
+
+.slds_spinner div {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+
+.slds_spinner:before,
+.slds_spinner:after,
+.slds_spinner div:before,
+.slds_spinner div:after {
+  animation-duration: 1000ms;
+  animation-iteration-count: infinite;
+  content: "";
+  background: #009DDC;
+  border-radius: 100%;
+  width: 0.5em;
+  height: 0.5em;
+  position: absolute;
+}
+
+.slds_spinner:before,
+.slds_spinner div:before {
+  animation-name: orbBounceBefore;
+  top: -0.25em;
+  left: -0.25em;
+}
+
+.slds_spinner:after,
+.slds_spinner div:after {
+  animation-name: orbBounceAfter;
+  top: -0.25em;
+  right: -0.25em;
+}
+
+.slds_spinner-a {
+  transform: rotate(60deg) translateY(0);
+}
+
+.slds_spinner-b {
+  transform: rotate(120deg) translateY(0);
+}
+
+@keyframes orbBounceBefore {
+  60% {
+    transform: translateX(0);
+    animation-timing-function: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+  }
+  80% {
+    animation-timing-function: cubic-bezier(0, 1.11, 0.7, 1.43);
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes orbBounceAfter {
+  60% {
+    animation-timing-function: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+    transform: translateX(0);
+  }
+  80% {
+    animation-timing-function: cubic-bezier(0, 1.11, 0.7, 1.43);
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.slds_spinner-a:before {
+  animation-delay: 166.66667ms;
+}
+
+.slds_spinner-b:before {
+  animation-delay: 333.33333ms;
+}
+
+.slds_spinner:after {
+  animation-delay: 500ms;
+}
+
+.slds_spinner-a:after {
+  animation-delay: 666.66667ms;
+}
+
+.slds_spinner-b:after {
+  animation-delay: 833.33333ms;
+}
+
 .showbox {
   position: relative;
   top: 0;
