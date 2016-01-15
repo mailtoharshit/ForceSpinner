@@ -115,7 +115,7 @@ function forceSpin(elementId, spinnerType, spinnerColor, spinnerbgColor) {
       $('.force-rect4').css("background-color", spinnerColor);
       $('.force-rect5').css("background-color", spinnerColor);
       $('.force-wave ').css("background-color", spinnerbgColor);
-      //$('.force-react ').css("background-color", height);
+      //$('.force-react ').css("background-color",   height);
       break;
     case "circle":
       $('.force-child:before').css("background-color", spinnerColor);
@@ -136,7 +136,7 @@ function forceSpin(elementId, spinnerType, spinnerColor, spinnerbgColor) {
       $('.force-cube').css("background-color", spinnerColor);
       break;
     case "bounce":
-      $('.force-child').css("background-color", spinnerColor);
+      $('.force-three-bounce .force-child').css("background-color", spinnerColor);
       break;
      
   }
