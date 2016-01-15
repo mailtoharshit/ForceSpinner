@@ -136,7 +136,8 @@ function forceSpin(elementId, spinnerType, spinnerColor, spinnerbgColor) {
       $('.force-cube').css("background-color", spinnerColor);
       break;
     case "bounce":
-      $('.force-child').css("background-color", spinnerColor);
+      $('force-child force-double-bounce1').css("background-color", spinnerColor);
+      $('force-child force-double-bounce2').css("background-color", spinnerColor);
       break;
      
   }
