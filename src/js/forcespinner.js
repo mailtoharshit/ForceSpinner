@@ -105,7 +105,6 @@ function generateSpinnerHtml(ele, spinnerType) {
 }
 
 function forceSpin(elementId, spinnerType, spinnerColor, spinnerbgColor) {
-  console.log('hello');
   generateSpinnerHtml(elementId, spinnerType);
   switch (spinnerType) {
     case "facebook":
@@ -135,10 +134,6 @@ function forceSpin(elementId, spinnerType, spinnerColor, spinnerbgColor) {
     case "cubes":
       $('.force-cube').css("background-color", spinnerColor);
       break;
-    case "bounce":
-      $('.force-child .force-double-bounce1').css("background-color", spinnerColor);
-      $('.force-child .force-double-bounce2').css("background-color", spinnerColor);
-      break;
-     
+         
   }
 }
